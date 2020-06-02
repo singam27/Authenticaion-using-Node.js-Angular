@@ -1,0 +1,26 @@
+<div class="container">
+    <img class="image" src="https://cdn.freebiesupply.com/logos/large/2x/jwt-logo-png-transparent.png">
+    <h1>Welcome to the Profile Page!!Succesfully LoggedIn using JWT Authentication.</h1>
+    <button calss="button" mat-raised-button (click)="logout()">LogOut</button>
+</div>
+<div class="homepage" style="padding-top: 3%; margin: auto;">
+    <table style="align-content: center; border: 3px solid black">
+        <th>Name</th>
+        <th>Email</th>
+        <th>LoggedIn Time</th>
+        <tr>
+            <td>{{this.userDetails.msg.name}}</td>
+            <td>{{this.userDetails.msg.email}}</td>
+            <td>{{presentTime | date: 'h:mm a z'}}</td>
+        </tr>
+    </table>
+
+</div>
+<div class="toekn-details" style="padding-top: 2%;">
+    <h3>When looged in a token is generated for every user. The token generated is stored in
+        the local storage and also set it to header.On the next HTTP call, that token is verified by the server, and web
+        server returns the response to the client.</h3>
+    <h3> <b>Below is the Token generated and it changes everytime when user logouts and log-in </b></h3>
+    <p> {{this.token}} </p>
+</div>
+

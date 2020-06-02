@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    min-height: 15%;
+    background-color: brown;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    height: 5%;
+}
+.image{
+    width: 10%;
+    height: 10%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
